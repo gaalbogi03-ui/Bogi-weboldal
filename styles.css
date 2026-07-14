@@ -162,6 +162,52 @@ opacity: 0.85;
 font-weight: 400;
 }
 
+/* Aszimmetrikus, portrés hero (index.html) */
+.hero-split {
+background: linear-gradient(180deg, rgba(242,233,216,0.4) 0%, rgba(252,249,242,0) 100%);
+}
+
+.hero-grid {
+display: flex;
+align-items: center;
+gap: 60px;
+text-align: left;
+}
+
+.hero-text {
+flex: 1;
+}
+
+.hero-eyebrow {
+display: block;
+color: var(--accent-gold);
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 1.5px;
+font-size: 0.85rem;
+margin-bottom: 14px;
+}
+
+.hero-grid h1 {
+font-size: 2.8rem;
+}
+
+.hero-grid p {
+margin: 0 0 40px 0;
+max-width: 480px;
+}
+
+.hero-image {
+flex: 0 0 380px;
+}
+
+.hero-image img {
+width: 100%;
+display: block;
+border-radius: 24px;
+box-shadow: var(--card-shadow-hover);
+}
+
 /* Gombok */
 .btn {
 display: inline-block;
@@ -785,6 +831,22 @@ padding: 14px 20px;
 }
 .hero h1 {
 font-size: 2.4rem;
+}
+.hero-grid {
+flex-direction: column;
+text-align: center;
+gap: 30px;
+}
+.hero-text {
+text-align: center;
+}
+.hero-grid p {
+margin: 0 auto 30px auto;
+}
+.hero-image {
+flex: none;
+max-width: 260px;
+margin: 0 auto;
 }
 .service-card {
 min-width: 100%;
