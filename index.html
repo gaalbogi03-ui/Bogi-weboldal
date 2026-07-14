@@ -92,11 +92,33 @@ transition: opacity 0.2s ease;
 opacity: 1;
 }
 
-/* Hero szekció - Lágy színátmenettel */
+/* Hero szekció - Lágy színátmenettel + elmosódott háttérkép */
 .hero {
 padding: 130px 0 110px 0;
 text-align: center;
-background: linear-gradient(180deg, rgba(242,233,216,0.4) 0%, rgba(252,249,242,0) 100%);
+position: relative;
+overflow: hidden;
+}
+
+.hero-bg {
+position: absolute;
+inset: 0;
+background-image: url('images/hero-bg.jpg');
+background-size: cover;
+background-position: center;
+z-index: 0;
+}
+
+.hero-overlay {
+position: absolute;
+inset: 0;
+background: linear-gradient(180deg, rgba(252,249,242,0.82) 0%, rgba(252,249,242,0.94) 100%);
+z-index: 1;
+}
+
+.hero .container {
+position: relative;
+z-index: 2;
 }
 
 .hero h1 {
@@ -536,6 +558,8 @@ margin: 10px 0;
 <main>
 <!-- HERO SZEKCIÓ -->
 <header class="hero">
+<div class="hero-bg"></div>
+<div class="hero-overlay"></div>
 <div class="container">
 <h1>Pénzügyek, emberi nyelven.<br>Hogy a döntései valóban Önt szolgálják.</h1>
 <p>Nem a bankokat vagy a biztosítókat képviselem, hanem Önt. Független tanácsadóként a teljes hazai piac kínálatából keressük meg azt a megoldást, ami a leginkább passzol az élethelyzetéhez.</p>
@@ -610,6 +634,76 @@ margin: 10px 0;
 <li><strong>Céges biztonság:</strong> Felelősségbiztosítások szakmára vagy cégvezetőkre, a telephely és a gépek védelme, valamint a céges autók (flották) kedvező biztosítása.</li>
 <li><strong>Dolgozói gondoskodás (Kulcsember programok):</strong> Olyan adóoptimalizált juttatási csomagokat (pl. céges egészségbiztosítást) építünk fel, amivel könnyebb megtartani a jó munkaerőt.</li>
 </ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- KIKNEK SEGÍTEK -->
+<section class="services" id="kiknek-segitek" style="background-color: var(--primary-bg);">
+<div class="container">
+<h2 style="text-align: center; font-size: 2.2rem; margin-bottom: 20px;">Kiknek segítek, és miben?</h2>
+<p style="text-align: center; opacity: 0.7; margin-bottom: 50px;">Kattintson a kártyákra a részletek megtekintéséhez!</p>
+
+<div class="services-grid">
+<div class="service-card" onclick="toggleService(this)">
+<div class="service-header">
+<h3>🌱 Pénzügyi alapozók</h3>
+<span class="toggle-icon">▼</span>
+</div>
+<div class="service-details">
+<p>Akik tudatos pénzügyi alapokat szeretnének teremteni ahelyett, hogy csak céltalanul rakosgatnak félre.</p>
+</div>
+</div>
+
+<div class="service-card" onclick="toggleService(this)">
+<div class="service-header">
+<h3>💍 Friss házasok és párok</h3>
+<span class="toggle-icon">▼</span>
+</div>
+<div class="service-details">
+<p>Akik most alapozzák meg a közös életüket (legyen szó fészekrakásról, családalapításról vagy stabilitásról), és biztosra akarnak menni az indulásnál.</p>
+</div>
+</div>
+
+<div class="service-card" onclick="toggleService(this)">
+<div class="service-header">
+<h3>🏡 Saját lakásra vágyók</h3>
+<span class="toggle-icon">▼</span>
+</div>
+<div class="service-details">
+<p>Akik a legkedvezőbb hitelek és támogatások mellett a jogi folyamatokat is biztos kezekben tudnák, hogy az adásvétel valóban stresszmentes legyen.</p>
+</div>
+</div>
+
+<div class="service-card" onclick="toggleService(this)">
+<div class="service-header">
+<h3>👨‍👩‍👧 Gondoskodó szülők</h3>
+<span class="toggle-icon">▼</span>
+</div>
+<div class="service-details">
+<p>Akik szülőként pontosan értik, hogy a család anyagi védelmét nem bízhatják a véletlenre.</p>
+</div>
+</div>
+
+<div class="service-card" onclick="toggleService(this)">
+<div class="service-header">
+<h3>⚖️ Business és magánélet egyensúlyozói</h3>
+<span class="toggle-icon">▼</span>
+</div>
+<div class="service-details">
+<p>Akik szeretnék végre élesen elválasztani és tisztán átlátni a privát megtakarításaikat és az üzleti bevételeiket.</p>
+</div>
+</div>
+
+<div class="service-card" onclick="toggleService(this)">
+<div class="service-header">
+<h3>🧩 Káoszból rendszert kereső</h3>
+<span class="toggle-icon">▼</span>
+</div>
+<div class="service-details">
+<p>Akiknek már van néhány meglévő szerződésük (hitel, biztosítás, befektetés), de hiányzik egy szakértő, aki egységes és érthető rendszerré gyúrná össze őket.</p>
 </div>
 </div>
 </div>
