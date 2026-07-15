@@ -715,17 +715,30 @@ color: var(--accent-gold);
 .footer-social {
 display: flex;
 align-items: center;
-gap: 20px;
+gap: 14px;
 }
 
-.footer-social a {
-font-size: 1.9rem;
-line-height: 1;
-text-decoration: none;
-transition: transform 0.2s ease;
+.footer-social a.footer-social-icon {
+width: 42px;
+height: 42px;
+border-radius: 12px;
+background: rgba(255, 255, 255, 0.08);
+display: flex;
+align-items: center;
+justify-content: center;
+color: rgba(255, 255, 255, 0.85);
+transition: all 0.2s ease;
 }
 
-.footer-social a:hover {
+.footer-social-icon svg {
+width: 20px;
+height: 20px;
+fill: currentColor;
+}
+
+.footer-social a.footer-social-icon:hover {
+background: var(--accent-gold);
+color: #1F110A;
 transform: translateY(-3px);
 }
 
