@@ -350,6 +350,67 @@ opacity: 0.8;
 margin: 0;
 }
 
+/* Csapat */
+.team {
+padding: 90px 0;
+background-color: var(--primary-bg);
+text-align: center;
+}
+
+.team h2 {
+font-size: 2rem;
+font-weight: 700;
+letter-spacing: -0.6px;
+margin: 10px 0 15px 0;
+}
+
+.team > .container > p {
+max-width: 600px;
+margin: 0 auto 50px auto;
+opacity: 0.75;
+font-size: 1.05rem;
+}
+
+.team-grid {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 40px;
+}
+
+.team-member {
+width: 180px;
+}
+
+.team-member img {
+width: 100%;
+aspect-ratio: 4 / 5;
+object-fit: cover;
+border-radius: 16px;
+box-shadow: var(--card-shadow);
+margin-bottom: 16px;
+transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.team-member:hover img {
+box-shadow: var(--card-shadow-hover);
+transform: translateY(-4px);
+}
+
+.team-member h3 {
+font-size: 1.05rem;
+font-weight: 700;
+margin: 0 0 4px 0;
+letter-spacing: -0.2px;
+}
+
+.team-role {
+font-size: 0.85rem;
+color: var(--accent-gold);
+font-weight: 600;
+margin: 0;
+}
+
 /* Szolgáltatások */
 .services {
 padding: 100px 0;
