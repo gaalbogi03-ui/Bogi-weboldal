@@ -370,16 +370,16 @@ gap: 28px;
 }
 
 .team-member {
-width: 130px;
+width: 100px;
 }
 
 .team-member img {
 width: 100%;
 aspect-ratio: 4 / 5;
 object-fit: cover;
-border-radius: 16px;
+border-radius: 12px;
 box-shadow: var(--card-shadow);
-margin-bottom: 16px;
+margin-bottom: 12px;
 transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
@@ -389,14 +389,15 @@ transform: translateY(-4px);
 }
 
 .team-member h3 {
-font-size: 1.05rem;
+font-size: 0.85rem;
 font-weight: 700;
-margin: 0 0 4px 0;
-letter-spacing: -0.2px;
+margin: 0 0 2px 0;
+letter-spacing: -0.1px;
+line-height: 1.25;
 }
 
 .team-role {
-font-size: 0.85rem;
+font-size: 0.72rem;
 color: var(--accent-gold);
 font-weight: 600;
 margin: 0;
