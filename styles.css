@@ -357,29 +357,20 @@ background-color: var(--primary-bg);
 text-align: center;
 }
 
-.team h2 {
-font-size: 2rem;
-font-weight: 700;
-letter-spacing: -0.6px;
-margin: 10px 0 15px 0;
-}
-
-.team > .container > p {
-max-width: 600px;
-margin: 0 auto 50px auto;
-opacity: 0.75;
-font-size: 1.05rem;
+.team .about-eyebrow {
+display: block;
+margin-bottom: 30px;
 }
 
 .team-grid {
 display: flex;
 justify-content: center;
 flex-wrap: wrap;
-gap: 40px;
+gap: 28px;
 }
 
 .team-member {
-width: 180px;
+width: 130px;
 }
 
 .team-member img {
